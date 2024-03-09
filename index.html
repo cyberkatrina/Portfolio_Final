@@ -13,6 +13,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="myStyles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -38,11 +40,11 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
                         <div class="text-center my-5">
-                            <h1 class="display-5 fw-bolder text-white mb-2">Hello World!</h1>
-                            <p class="lead text-white-50 mb-4">I'm Katrina Aliashkevich, an aspiring Web Developer</p>
+                            <h1 class="display-5 fw-bolder text-white mb-2 grow">Hello World!</h1>
+                            <p class="lead text-white-50 mb-4 grow">I'm Katrina Aliashkevich, an aspiring Web Developer</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                                 <!-- <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a> -->
-                                <a class="btn btn-outline-light btn-lg px-4" href="./about.html">Learn More</a>
+                                <a class="btn btn-outline-light btn-lg px-4 tag" href="./about.html">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -53,13 +55,13 @@
         <section class="py-5 border-bottom ">
             <div class="container px-5 my-5 px-5">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Customer testimonials</h2>
-                    <p class="lead mb-0">Our customers love working with us</p>
+                    <h2 class="fw-bolder tag">Customer testimonials</h2>
+                    <p class="lead mb-0 tag">Companies love working with me</p>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
                         <!-- Testimonial 1-->
-                        <div class="card mb-4">
+                        <div class="card mb-4 grow">
                             <div class="card-body p-4">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
@@ -71,7 +73,7 @@
                             </div>
                         </div>
                         <!-- Testimonial 2-->
-                        <div class="card">
+                        <div class="card grow">
                             <div class="card-body p-4">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
@@ -86,6 +88,13 @@
                 </div>
             </div>
         </section>
+        <div class="scrollIcon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" class="mb-2">
+                <rect x="0.5" y="1.5" width="15" height="21" rx="7.5" stroke="#8D929E"></rect>
+                <line x1="8.5" y1="5" x2="8.5" y2="10" stroke="#8D929E"></line>
+            </svg>
+            <p class="scroll">Scroll down</p>
+        </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; My Website 2024</p></div>
