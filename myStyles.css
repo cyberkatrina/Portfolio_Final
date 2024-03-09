@@ -1,0 +1,204 @@
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  height: 55%;
+  background-image: url("blue.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0px -200px;
+}
+
+.parallax2 {
+  background-position: 0px 0px;
+  height: 60%;
+  background-repeat: repeat;
+}
+
+.parallax3 {
+  height: 100%;
+  background-position: 0px -130px;
+}
+
+.parallax4 {
+  height: 25%;
+}
+
+.bg-dark {
+  background-color: rgba(27, 37, 61) !important;
+}
+
+.py-5 {
+  padding-top: 1.5rem !important;
+}
+
+.my-5 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.gradPic {
+  background-image: url("gradPic.JPG");
+  height: 100%;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 24%;
+  box-shadow: 0px 5px 15px black;
+}
+
+.gradPic2 {
+  background-image: url("gradPic2.JPG");
+  margin-right: 24%;
+  margin-left: 0%;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.flex1 .feature {
+  margin-right: 20px;
+}
+
+.pic1 {
+  background-image: url("pic1.png");
+  height: 200px;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.pic2 {
+  background-image: url("pic2.png");
+  height: 200px;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.pic3 {
+  background-image: url("pic33.png");
+  height: 200px;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.pic4 {
+  background-image: url("pic4.png");
+  height: 200px;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.col-lg-5 {
+  padding-top: 30px;
+  width: 50%;
+}
+
+.h4 {
+  padding-bottom: 15px;
+}
+
+h3 {
+  padding-top: 15px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B253D;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.resume {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.flex1 a {
+  color: white;
+  max-width: 250px;
+  min-width: 250px;
+}
+
+#features {
+  background-color: #1B253D;
+  color: white;
+}
+
+.tag {
+  opacity: 10%;
+  transition: all 2s;
+}
+
+.grow {
+  animation: grow 2s;
+  animation-fill-mode: forwards;
+}
+
+.grow2 {
+  animation: grow 2s ease 1.5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.tag.visible {
+  opacity: 100%;
+}
+
+.contact {
+  width: 500px;
+  padding-left: 50px;
+}
+
+.scrollIcon {
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+}
+
+.scroll {
+  color: #8D929E;
+}
+
+/* Some mobile devices have a problem with background-attachment: fixed. So, you can use media queries to turn off the parallax effect for mobile devices: */
+@media (max-width: 500px) { 
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
