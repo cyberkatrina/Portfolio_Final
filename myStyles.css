@@ -19,8 +19,8 @@ body, html {
 }
 
 .parallax3 {
-  height: 100%;
-  background-position: 0px -130px;
+  height: 85%;
+  background-position: 0px -50px;
 }
 
 .parallax4 {
@@ -66,7 +66,6 @@ body, html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
 }
 
 .flex1 .feature {
@@ -149,7 +148,7 @@ h3 {
 }
 
 .tag {
-  opacity: 10%;
+  opacity: 15%;
   transition: all 2s;
 }
 
@@ -183,13 +182,66 @@ h3 {
   color: #8D929E;
 }
 
-/* Some mobile devices have a problem with background-attachment: fixed. So, you can use media queries to turn off the parallax effect for mobile devices: */
-@media (max-width: 500px) { 
+/* Code to make the website responsive to mobile screen sizes */
+@media (max-width: 992px) { 
+
   .parallax {
-    background-attachment: scroll;
+    height: 40%;
   }
+
+  .parallax2 {
+    height: 55%;
+  }
+
+  .parallax3 {
+    height: 85%;
+    background-position: 0px 0px;
+  }
+
+  .parallax4 {
+    height: 20%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .gradPic {
+    margin-left: 0;
+    box-shadow: none;
+  }
+
+  .info {
+    padding-left: 25px;
+  }
+
+  .scrollIcon {
+    bottom: 20px;
+    left: 8px;
+  }
+
+  .resume {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pic1, .pic2, .pic3, .pic4 {
+    margin-bottom: 0;
+  }
+
+  .col-lg-5 {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .col-lg-5 p {
+    margin-top: 15px;
+  }
+
+  
 }
 
+/* Animation keyframes for the grow effect */
 @keyframes grow {
   0% {
     transform: scale(0);
